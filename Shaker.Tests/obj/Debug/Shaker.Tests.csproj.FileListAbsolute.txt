@@ -1,0 +1,16 @@
+c:\users\alaneh\source\repos\Shaker\Shaker.Tests\bin\Debug\Shaker.Tests.dll.config
+c:\users\alaneh\source\repos\Shaker\Shaker.Tests\bin\Debug\Shaker.Tests.dll
+c:\users\alaneh\source\repos\Shaker\Shaker.Tests\bin\Debug\Shaker.Tests.pdb
+c:\users\alaneh\source\repos\Shaker\Shaker.Tests\bin\Debug\EntityFramework.dll
+c:\users\alaneh\source\repos\Shaker\Shaker.Tests\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\alaneh\source\repos\Shaker\Shaker.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+c:\users\alaneh\source\repos\Shaker\Shaker.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\alaneh\source\repos\Shaker\Shaker.Tests\bin\Debug\EntityFramework.xml
+c:\users\alaneh\source\repos\Shaker\Shaker.Tests\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\alaneh\source\repos\Shaker\Shaker.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+c:\users\alaneh\source\repos\Shaker\Shaker.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\alaneh\source\repos\Shaker\Shaker.Tests\obj\Debug\Shaker.Tests.csprojAssemblyReference.cache
+c:\users\alaneh\source\repos\Shaker\Shaker.Tests\obj\Debug\Shaker.Tests.csproj.CoreCompileInputs.cache
+c:\users\alaneh\source\repos\Shaker\Shaker.Tests\obj\Debug\Shaker.Tests.csproj.CopyComplete
+c:\users\alaneh\source\repos\Shaker\Shaker.Tests\obj\Debug\Shaker.Tests.dll
+c:\users\alaneh\source\repos\Shaker\Shaker.Tests\obj\Debug\Shaker.Tests.pdb

@@ -1,0 +1,66 @@
+﻿@model Shaker.Model.InventoryDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>InventoryDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.InventoryId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InventoryId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OwnerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OwnerId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InventoryLiquor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InventoryLiquor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InventoryJuice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InventoryJuice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InventoryFruit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InventoryFruit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InventoryOther)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InventoryOther)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.InventoryId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
