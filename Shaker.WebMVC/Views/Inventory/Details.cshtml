@@ -19,14 +19,6 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.OwnerId)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.OwnerId)
-        </dd>
-
-        <dt>
             @Html.DisplayNameFor(model => model.InventoryLiquor)
         </dt>
 
@@ -61,6 +53,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.InventoryId }) |
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
