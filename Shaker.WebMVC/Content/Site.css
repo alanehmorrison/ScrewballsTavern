@@ -1,7 +1,6 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-image: url(../Content/img/bg.jpg)
     
 }
 
@@ -28,3 +27,297 @@ body {
     font-family: 'Lato';
 }
 
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+    background-color: greenyellow;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+/* Style the container */
+.container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+body {
+    background: linear-gradient(45deg,darkorchid,crimson);
+}
+
+.wrapper {
+    width: 400px;
+    height: 30%;
+    margin: 10% 32% 0 32%;
+    background: rgba(20,30,40,0.6);
+    padding: 50px 0 0 0;
+    border: 25px double ivory;
+    border-top-color: transparent;
+    animation: 3s blink ease-in-out infinite;
+    border-bottom-color: transparent;
+    box-sizing: padding-box;
+    position: absolute;
+    border-radius: 28%;
+    box-shadow: 0px 60px 200px -40px #000;
+}
+
+input[type="text"], input[type="password"] {
+    margin: 0px 50px;
+    padding: 5px 15px;
+    height: 30px;
+    width: 250px;
+    display: block;
+    color: mediumpurple;
+    font-size: 1.2em;
+    position: relative;
+    box-sizing: padding-box;
+    background: border-box;
+    border: solid;
+    border-bottom: 5px double dashed
+}
+
+    input[type="text"], input[type="password"]:focus {
+        outline: none;
+    }
+
+input[type="submit"] {
+    margin: 0 110px;
+    width: 150px;
+    height: 35px;
+    padding: 5px;
+    background: springgreen;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px -8px springgreen;
+}
+/*************Shake animation**********/
+.wrapper:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+/*****************************/
+@keyframes blink {
+    20%,30% {
+        border: 25px double ivory;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+    }
+
+    50%,70% {
+        border: 25px double springgreen;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+    }
+
+    80%,90%,100% {
+        border: 25px double #000;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+    }
+}
+
+/*p {
+    text-align: center;
+    font-size: 1.2em;
+    color: green;
+    font-weight: bold;
+}*/
+
+.dementiawalk {
+    display: inline-flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 230px;
+    width: 500px;
+    position: relative;
+    margin: 15px;
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    transition: -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.datebox {
+    width: 200px;
+    box-sizing: border-box;
+    margin: 15px;
+    height: 200px;
+    max-height: 100%;
+    position: relative;
+}
+
+.extradatebox {
+    width: 200px;
+    box-sizing: border-box;
+    margin: 15px;
+    height: 200px;
+    max-height: 100%;
+    position: relative;
+    display: none;
+}
+
+.displayextradatebox {
+    display: block;
+}
+
+.dateflex {
+}
+
+
+.datenumber {
+    font-size: 72px;
+    line-height: 80px;
+}
+
+.datemonth {
+    font-size: 58px;
+}
+
+.date {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: #FFFFFF99;
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+}
+
+.description {
+    text-align: center;
+    background: white;
+    opacity: 0.8;
+    padding: 0px;
+    margin: 15px;
+    height: 70px
+}
+
+.bookingbutton {
+    text-align: center;
+    background: rgb(178,132,55,0.9);
+    color: white;
+    padding: 2px;
+    flex-grow: 1;
+    margin: 15px;
+    height: 22.5px;
+    cursor: pointer;
+}
+
+.eventtitle {
+    text-align: center;
+    padding: 6px;
+    background: white;
+    opacity: 0.8;
+    flex-grow: 1;
+    font-size: 20px;
+    color: #B28437;
+    margin: 15px;
+}
+
+.containerbox {
+    display: block;
+    width: 300px;
+    margin: 0 15px 0 0;
+}
+
+.Birthday {
+    display: inline-flex;
+    background-image: url("https://braintree.uat.jadu.net/images/Picture1_2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 230px;
+    width: 1000px;
+    position: relative;
+    border: 1px solid black;
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+}
+
+.flexboxbox {
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.active {
+    width: 100%;
+}
+      
