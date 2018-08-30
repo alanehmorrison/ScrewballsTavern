@@ -1,18 +1,14 @@
 ﻿@model IEnumerable<Shaker.Model.ShoppingListItem>
-
 @{
     ViewBag.Title = "Index";
 }
-
 <h2>Index</h2>
-
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 @if (TempData.ContainsKey("SaveResult"))
 {
-     <div class="alert alert-success fade in" role="alert">
-
+    <div class="alert alert-success fade in" role="alert">
         <button type="button" class="close" data-dismiss="alert">
             <span>&times;</span>
         </button>
@@ -35,7 +31,6 @@
         </th>
         <th></th>
     </tr>
-
     @foreach (var item in Model)
     {
         <tr>
@@ -58,5 +53,13 @@
             </td>
         </tr>
     }
-
 </table>
+<div class="container">
+    <div class="keg">
+        <span class="handle"></span>
+        <span class="pipe"></span>
+    </div>
+    <div class="glass">
+        <span class="beer"></span>
+    </div>
+</div>

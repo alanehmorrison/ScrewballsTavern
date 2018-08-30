@@ -1,11 +1,8 @@
 ﻿@model Shaker.Model.ShoppingDetail
-
 @{
     ViewBag.Title = "Delete";
 }
-
 <h2>Delete</h2>
-
 <h3>Are you sure you want to delete this?</h3>
 <div>
     <h4>ShoppingDetail</h4>
@@ -14,46 +11,36 @@
         <dt>
             @Html.DisplayNameFor(model => model.ShoppingId)
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.ShoppingId)
         </dd>
-
         <dt>
             @Html.DisplayNameFor(model => model.ShoppingLiquor)
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.ShoppingLiquor)
         </dd>
-
         <dt>
             @Html.DisplayNameFor(model => model.ShoppingJuice)
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.ShoppingJuice)
         </dd>
-
         <dt>
             @Html.DisplayNameFor(model => model.ShoppingFruit)
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.ShoppingFruit)
         </dd>
-
         <dt>
             @Html.DisplayNameFor(model => model.ShoppingOther)
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.ShoppingOther)
         </dd>
-
     </dl>
-
-    @using (Html.BeginForm()) {
+    @using (Html.BeginForm())
+    {
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
@@ -62,3 +49,13 @@
         </div>
     }
 </div>
+<div class="container">
+    <div class="keg">
+        <span class="handle"></span>
+        <span class="pipe"></span>
+    </div>
+    <div class="glass">
+        <span class="beer"></span>
+    </div>
+</div>
+

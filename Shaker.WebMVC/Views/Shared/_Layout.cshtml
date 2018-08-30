@@ -20,14 +20,13 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Menu", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li id="mainNav">@Html.ActionLink("Events", "About", "Home")</li>
+                    <li id="mainNav">@Html.ActionLink("About our Location", "Contact", "Home")</li>
                     @if (User.Identity.IsAuthenticated)
                     {
-                    <li>@Html.ActionLink("Recipes", "Index", "Recipe")</li>
-                    <li>@Html.ActionLink("Inventory", "Index", "Inventory")</li>
-                    <li>@Html.ActionLink("ShoppingList", "Index", "Shopping")</li>
+                    <li id="mainNav">@Html.ActionLink("Recipes", "Index", "Recipe")</li>
+                    <li id="mainNav">@Html.ActionLink("Inventory", "Index", "Inventory")</li>
+                    <li id="mainNav">@Html.ActionLink("ShoppingList", "Index", "Shopping")</li>
                     }
                 </ul>
                 @Html.Partial("_LoginPartial")

@@ -4,188 +4,29 @@
 
 <title>Welcome to Screwball's Tavern</title>
 
-<h1 class="col-sm-3">Like Us On Social Media!</h1>
-<img class="col-sm-1.5" src="~/Content/facebook.png" width="100" height="100" />
-<img class="col-sm-1.5" src="~/Content/img/instagram.jpg" width="100" height="100" />
-<img class="col-sm-1.5" src="~/Content/img/snap.png" width="100" height="100" />
-<img class="col-sm-1.5"bsrc="~/Content/img/twitter.png" width="100" height="100" />
 
 
-<!-- Contenedor Principal -->
-<div class="comments-container">
-    <h1>Screwball's Tavern <a href="http://creaticode.com">Facebook.com</a></h1>
-
-    <ul id="comments-list" class="comments-list">
-        <li>
-            <div class="comment-main-level">
-                <!-- Avatar -->
-                <div class="comment-avatar">
-                    <img src="~/Content/img/paul.JPG" />
-                </div>
-                <!-- Contenedor del Comentario -->
-                <div class="comment-box">
-                    <div class="comment-head">
-                        <h6 class="comment-name by-author"><a href="http://creaticode.com/blog">Paul O'Connor</a></h6>
-                        <span>29 minutes ago</span>
-                        <i class="fa fa-reply"></i>
-                        <i class="fa fa-heart"></i>
-                    </div>
-                    <div class="comment-content">
-                        Best mixed drinks I've ever had! The atmosphere is so unique!!! No other place like this around.
-                    </div>
-                </div>
-            </div>
-            <!-- Respuestas de los comentarios -->
-            <ul class="comments-list reply-list">
-                <li>
-                    <!-- Avatar -->
-                    <div class="comment-avatar"><img src="~/Content/img/kenn.JPG" /></div>
-                    <!-- Contenedor del Comentario -->
-                    <div class="comment-box">
-                        <div class="comment-head">
-
-                            <h6 class="comment-name"><a href="http://creaticode.com/blog">Kenn Pascascio</a></h6>
-                            <span>20 minutes ago</span>
-                            <i class="fa fa-reply"></i>
-                            <i class="fa fa-heart"></i>
-                        </div>
-                        <div class="comment-content">
-                            I've been thinking about trying this place. It looks cool. What's your favorite drink here?
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <!-- Avatar -->
-                    <div class="comment-avatar">
-                        <img src="~/Content/img/paul.JPG" />
-                    </div>
-                    <!-- Contenedor del Comentario -->
-                    <div class="comment-box">
-                        <div class="comment-head">
-                            <h6 class="comment-name by-author"><a href="http://creaticode.com/blog">Paul O'Connor</a></h6>
-                            <span>10 minutes ago</span>
-                            <i class="fa fa-reply"></i>
-                            <i class="fa fa-heart"></i>
-                        </div>
-                        <div class="comment-content">
-                            They're all so amazing I almost can't even choose!!! The Screwball or Barbie's Asylum may be my top two. Enjoy! :)
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </li>
-
-        <li>
-            <div class="comment-main-level">
-                <!-- Avatar -->
-                <div class="comment-avatar">
-                    <img src="~/Content/img/kenn.JPG" />" alt="">
-                </div>
-                <!-- Contenedor del Comentario -->
-                <div class="comment-box">
-                    <div class="comment-head">
-                        <h6 class="comment-name"><a href="http://creaticode.com/blog">Kenn Pascascio</a></h6>
-                        <span>hace 10 minutos</span>
-                        <i class="fa fa-reply"></i>
-                        <i class="fa fa-heart"></i>
-                    </div>
-                    <div class="comment-content">
-                        My wife would love this just by the names! Thanks! Well be in tonight!!!!
-                    </div>
-                </div>
-            </div>
-        </li>
-    </ul>
+<div id="main" class="is-loading">
+    <h1>
+        Welcome to Screwball's Tavern
+    </h1>
 </div>
 
 
+@Scripts.Render("~/bundles/jquery")
 
-<h1>New! Upcoming Events! Please see below!</h1>
+<script>
 
-<!--JS includes jQuery -->
-<div class="flexboxbox">
-    <div class="dementiawalk" style="background-image: url('https://images.pexels.com/photos/40541/christmas-snow-snowman-decoration-40541.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
-        <div class="datebox">
-            <p class="date"><span class=datenumber>15</span> <span class=datemonth> Dec</span> </p>
+    $(document).ready(function () {
+        setTimeout(function () {
+            $("#main").removeClass("is-loading");
+        }, 100)
+    });
 
-        </div>
-        <div class="extradatebox">
-            <p class="date"><span class=datenumber>29</span> <span class=datemonth> Nov</span> </p>
-        </div>
-        <div class="extradatebox">
-            <p class="date"><span class=datenumber>31</span> <span class=datemonth> Dec</span> </p>
-        </div>
-        <div class="containerbox">
-            <p class="eventtitle"> Holiday Mixology</p>
-            <p class="description">
-                $25 per person. 8-10pm.
-            </p>
-            <p class="bookingbutton"> Book Your Place </p>
-        </div>
-
-    </div>
-    <link href='https://fonts.googleapis.com/css?family=Cinzel:400' rel='stylesheet' type='text/css'>
-
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-
-    <p> </p>
-
-    <div class="dementiawalk" style="background-image: url('https://images.pexels.com/photos/1303094/pexels-photo-1303094.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
-        <div class="datebox">
-            <p class="date"><span class=datenumber>22</span> <span class=datemonth>Dec</span> </p>
-        </div>
-        <div class="containerbox">
-            <p class="eventtitle"> Dirty Santa </p>
-            <p class="description">
-                Bring a gift to exchange. We will have christmas cocktails.
-
-            </p>
-            <p class="bookingbutton"> Book Your Place </p>
-        </div>
-
-    </div>
-    <link href='https://fonts.googleapis.com/css?family=Cinzel:400' rel='stylesheet' type='text/css'>
-
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-
-    <p> </p>
-
-    <div class="dementiawalk" style="background-image: url('https://images.pexels.com/photos/261485/pexels-photo-261485.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
-        <div class="datebox">
-            <p class="date"><span class=datenumber>31</span> <span class=datemonth> Dec</span> </p>
-        </div>
-        <div class="containerbox">
-            <p class="eventtitle"> NYE Party  </p>
-            <p class="description">
-                10 year anniversary of our NYE party.
-            </p>
-            <p class="bookingbutton"> Book Your Place </p>
-        </div>
-
-        <p> </p>
-
-    </div>
-
-    <div class="dementiawalk" style="background-image: url('https://images.pexels.com/photos/730807/pexels-photo-730807.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
-        <div class="datebox">
-            <p class="date"><span class=datenumber>19</span> <span class=datemonth> Jan</span> </p>
-        </div>
-        <div class="containerbox">
-            <p class="eventtitle"> Paint n Sip </p>
-            <p class="description">
-                Project details coming soon. $25 per spot.
-            </p>
-            <p class="bookingbutton"> Book Your Place </p>
-        </div>
+</script>
 
 
 
-
-    </div>
-    <div>
-
-    </div>
 
 
 

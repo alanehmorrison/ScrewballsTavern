@@ -217,11 +217,16 @@
     <Content Include="Content\img\background.jpg" />
     <Content Include="Content\img\bg.jpg" />
     <None Include="Content\img\screwball" />
+    <Content Include="Content\img\drink.jpg" />
+    <Content Include="Content\img\drink2.JPG" />
+    <Content Include="Content\img\drink3.jpg" />
+    <Content Include="Content\img\drink4.jpg" />
     <Content Include="Content\img\instagram.jpg" />
     <Content Include="Content\img\kenn.JPG" />
     <Content Include="Content\img\paul.JPG" />
     <Content Include="Content\img\screw.JPG" />
     <Content Include="Content\img\snap.png" />
+    <Content Include="Content\img\tavern1.jpg" />
     <Content Include="Content\img\twitter.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
