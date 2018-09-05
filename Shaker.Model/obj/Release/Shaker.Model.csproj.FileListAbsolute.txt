@@ -1,0 +1,16 @@
+C:\Users\Alaneh\source\repos\MrShaker\NEW\mrshaker-master\Shaker.Model\bin\Release\Shaker.Model.dll.config
+C:\Users\Alaneh\source\repos\MrShaker\NEW\mrshaker-master\Shaker.Model\bin\Release\Shaker.Model.dll
+C:\Users\Alaneh\source\repos\MrShaker\NEW\mrshaker-master\Shaker.Model\bin\Release\Shaker.Model.pdb
+C:\Users\Alaneh\source\repos\MrShaker\NEW\mrshaker-master\Shaker.Model\bin\Release\EntityFramework.dll
+C:\Users\Alaneh\source\repos\MrShaker\NEW\mrshaker-master\Shaker.Model\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Alaneh\source\repos\MrShaker\NEW\mrshaker-master\Shaker.Model\bin\Release\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Alaneh\source\repos\MrShaker\NEW\mrshaker-master\Shaker.Model\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Alaneh\source\repos\MrShaker\NEW\mrshaker-master\Shaker.Model\bin\Release\EntityFramework.xml
+C:\Users\Alaneh\source\repos\MrShaker\NEW\mrshaker-master\Shaker.Model\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Alaneh\source\repos\MrShaker\NEW\mrshaker-master\Shaker.Model\bin\Release\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Alaneh\source\repos\MrShaker\NEW\mrshaker-master\Shaker.Model\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Alaneh\source\repos\MrShaker\NEW\mrshaker-master\Shaker.Model\obj\Release\Shaker.Model.csprojAssemblyReference.cache
+C:\Users\Alaneh\source\repos\MrShaker\NEW\mrshaker-master\Shaker.Model\obj\Release\Shaker.Model.csproj.CoreCompileInputs.cache
+C:\Users\Alaneh\source\repos\MrShaker\NEW\mrshaker-master\Shaker.Model\obj\Release\Shaker.Model.csproj.CopyComplete
+C:\Users\Alaneh\source\repos\MrShaker\NEW\mrshaker-master\Shaker.Model\obj\Release\Shaker.Model.dll
+C:\Users\Alaneh\source\repos\MrShaker\NEW\mrshaker-master\Shaker.Model\obj\Release\Shaker.Model.pdb

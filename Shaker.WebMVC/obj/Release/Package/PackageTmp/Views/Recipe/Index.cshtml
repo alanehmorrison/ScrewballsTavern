@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Shaker.Model.RecipeListItem>
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Index</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@if (TempData.ContainsKey("SaveResult"))
+{
+    <div class="alert alert-success fade in" role="alert">
+
+        <button type="button" class="close" data-dismiss="alert">
+            <span>&times;</span>
+        </button>
+        @TempData["SaveResult"]
+    </div>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.RecipeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RecipeIngredients)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RecipeInstructions)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecipeName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecipeIngredients)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecipeInstructions)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.RecipeId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.RecipeId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.RecipeId })
+            </td>
+        </tr>
+    }
+</table>
+
+
+<div class="container">
+    <div class="keg">
+        <span class="handle"></span>
+        <span class="pipe"></span>
+    </div>
+    <div class="glass">
+        <span class="beer"></span>
+    </div>
+</div>

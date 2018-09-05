@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<title>Welcome to Screwball's Tavern</title>
+
+
+
+<div id="main" class="is-loading">
+    <h1>
+        Welcome to Screwball's Tavern
+    </h1>
+</div>
+
+
+@Scripts.Render("~/bundles/jquery")
+
+<script>
+
+    $(document).ready(function () {
+        setTimeout(function () {
+            $("#main").removeClass("is-loading");
+        }, 100)
+    });
+
+</script>
+
+
+
+
+
+

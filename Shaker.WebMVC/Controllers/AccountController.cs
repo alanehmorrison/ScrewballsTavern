@@ -137,7 +137,7 @@ namespace Shaker.WebMVC.Controllers
 
         //
         // GET: /Account/Register
-        [Authorize]
+        [AllowAnonymous]
         public ActionResult Register()
         {
             return View();
@@ -146,7 +146,7 @@ namespace Shaker.WebMVC.Controllers
         //
         // POST: /Account/Register
         [HttpPost]
-        [Authorize]
+        [AllowAnonymous]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {

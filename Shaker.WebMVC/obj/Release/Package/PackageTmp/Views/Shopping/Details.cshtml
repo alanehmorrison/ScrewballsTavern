@@ -1,0 +1,48 @@
+﻿@model Shaker.Model.ShoppingDetail
+@{
+    ViewBag.Title = "Details";
+}
+<h2>Details</h2>
+<div>
+    <h4>ShoppingDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ShoppingLiquor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ShoppingLiquor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ShoppingJuice)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ShoppingJuice)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ShoppingFruit)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ShoppingFruit)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ShoppingOther)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ShoppingOther)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ShoppingId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+<div class="container">
+    <div class="keg">
+        <span class="handle"></span>
+        <span class="pipe"></span>
+    </div>
+    <div class="glass">
+        <span class="beer"></span>
+    </div>
+</div>

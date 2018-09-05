@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Shaker.Model.ShoppingListItem>
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Index</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@if (TempData.ContainsKey("SaveResult"))
+{
+    <div class="alert alert-success fade in" role="alert">
+        <button type="button" class="close" data-dismiss="alert">
+            <span>&times;</span>
+        </button>
+        @TempData["SaveResult"]
+    </div>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ShoppingLiquor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShoppingJuice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShoppingFruit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShoppingOther)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShoppingLiquor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShoppingJuice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShoppingFruit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShoppingOther)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ShoppingId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ShoppingId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ShoppingId })
+            </td>
+        </tr>
+    }
+</table>
+<div class="container">
+    <div class="keg">
+        <span class="handle"></span>
+        <span class="pipe"></span>
+    </div>
+    <div class="glass">
+        <span class="beer"></span>
+    </div>
+</div>
